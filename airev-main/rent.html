@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Charging Sharing Community</title>
+    <link rel="stylesheet" href="rent.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    
+
+    <br><br><br><br>
+    <h2 align="center">Welcome to the Charging Revolution!</h2>
+    <div class="product-card">
+      <h1>Rent my Charger </h1>
+      <p>...</p>
+      <hr>
+      <br>
+      <div class="product-info">
+        <label for="sell"></label><br><br>
+        <button type ="submit" class="product-button">Rent out your charger</button>
+      </div>
+    </div>
+
+    <div class="product-card1">
+        <h1>Charge My EV</h1>
+        <p>...</p>
+       <hr>
+        <br>
+  
+        <div class="product-info">
+          <label for="buy"></label><br>
+          <a href="data.html"><button type ="submit" id="sell" class="product-button">Find a local Charger</button><br></a>
+        </div>
+  
+      </div>
+  
+
+    <script>
+      $(".product-colors span").click(function(){
+        $(".product-colors span").removeClass("active");
+        $(this).addClass("active");
+        $("body").css("background",$(this).attr("data-color"));
+        $(".product-price").css("color",$(this).attr("data-color"));
+        $(".product-button").css("color",$(this).attr("data-color"));
+        $(".product-pic").css("background-image",$(this).attr("data-pic"));
+      });
+    </script>
+    <a href="dash.html"><button type ="sub,it" id="back2" class="product-button">Back</button><br></a>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Product Page - FantacyDesigns</title>
+    <link rel="stylesheet" href="buy.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <br><br><br><br>
+    <h2 align="center">Buy or sell on a single platform</h2>
+    <div class="product-card">
+      <h1>Sell your batteries and charger here.</h1>
+      <p>...</p>
+      <hr>
+      <br>
+      <div class="product-info">
+        <label for="sell"></label><br><br>
+        <button type ="submit" class="product-button">List out items here</button>
+      </div>
+    </div>
+    
+    <div class="product-card1">
+        <h1>Buy batteries and charger here.</h1>
+        <p>...</p>
+       <hr>
+        <br>
+  
+        <div class="product-info">
+          <label for="buy"></label><br>
+          <button type ="submit" id="sell" class="product-button">Buy items from here</button><br><br>
+          
+          
+        </div>
+        
+      </div>
+      
+    <script>
+      $(".product-colors span").click(function(){
+        $(".product-colors span").removeClass("active");
+        $(this).addClass("active");
+        $("body").css("background",$(this).attr("data-color"));
+        $(".product-price").css("color",$(this).attr("data-color"));
+        $(".product-button").css("color",$(this).attr("data-color"));
+        $(".product-pic").css("background-image",$(this).attr("data-pic"));
+      });
+    </script>
+    <label for="back"></label><br>
+          <a href="dash.html"submit" id="back1" class="product-button">Back</button><br></a>
+  </body>
+</html>
